@@ -41,7 +41,7 @@ describe('Mini Demo for Kustomer', () => {
             homePage.verifyConversationContextSection();
             homePage.verifyAutomationSection();
             homePage.verifyAwayReviewSection();
-            homePage.verifyNewStandartSection();
+            homePage.verifyNewStandardSection();
         });
     });
 });

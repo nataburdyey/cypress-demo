@@ -26,7 +26,7 @@ export const homeLocators = {
     omnichannelSection: locators.section('Truly Omnichannel'),
     automationSection: locators.section('Intelligent Automation'),
     awayReviewSection: locators.section('Analytics Manager, Away'),
-    newStandartSection: locators.section('Set a New Standard for Customer Support'),
+    newStandardSection: locators.section('Set a New Standard for Customer Support'),
 
     // Buttons
     btnRequestDemo: locators.button('Request a Demo'),
@@ -85,11 +85,11 @@ export class HomePage extends BasePage {
         this.checkSectionLink(loc.awayReviewSection, loc.btnReadCaseStudy, loc.urlCaseStudy);
     };
 
-    verifyNewStandartSection() {
-        cy.xpath(loc.newStandartSection).should('be.visible');
-        this.checkSectionLink(loc.newStandartSection, loc.btnGetGuide, loc.urlGuides);
-        this.checkSectionLink(loc.newStandartSection, loc.btnReadBlog, loc.urlBlog);
-        this.checkSectionLink(loc.newStandartSection, loc.btnGetGuide2, loc.urlGuides);
+    verifyNewStandardSection() {
+        cy.xpath(loc.newStandardSection).should('be.visible');
+        this.checkSectionLink(loc.newStandardSection, loc.btnGetGuide, loc.urlGuides);
+        this.checkSectionLink(loc.newStandardSection, loc.btnReadBlog, loc.urlBlog);
+        this.checkSectionLink(loc.newStandardSection, loc.btnGetGuide2, loc.urlGuides);
     }
 
 }
