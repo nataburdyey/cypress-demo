@@ -1,0 +1,32 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@testing-library/cypress": "^4.1.1",
+    "@types/testing-library__cypress": "^4.1.0",
+    "cypress": "^3.4.1",
+    "cypress-xpath": "^1.4.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-chai-friendly": "^0.4.1",
+    "eslint-plugin-cypress": "^2.6.1",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nataburdyey/cypress-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nataburdyey/cypress-demo/issues"
+  },
+  "homepage": "https://github.com/nataburdyey/cypress-demo#readme"
+}
