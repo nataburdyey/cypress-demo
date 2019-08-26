@@ -29,7 +29,6 @@ export const homeLocators = {
     newStandardSection: locators.section('Set a New Standard for Customer Support'),
 
     // Buttons
-    // move to general?
     btnRequestDemo: locators.button('Request a Demo'),
     btnReadCaseStudy: locators.button('Read the case study'),
     btnGetGuide: locators.button('Get the Guide'),
