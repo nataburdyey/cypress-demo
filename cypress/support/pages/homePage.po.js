@@ -1,19 +1,19 @@
-import BasePage from './basePage';
+import BasePage from './basePage.po';
 import {
     locators
 } from '../locators';
 import {
     demoPage
-} from './explore/demoPage'
+} from './explore/demoPage.po';
 import {
     productPage
-} from './explore/productPage'
+} from './explore/productPage.po';
 import {
     platformPage
-} from './explore/platformPage';
+} from './explore/platformPage.po';
 
 export const homeLocators = {
-    // Urls
+    // URLs
     url: '/',
     urlCaseStudy: '/case-study/',
     urlGuides: '/guides/',
@@ -29,6 +29,7 @@ export const homeLocators = {
     newStandardSection: locators.section('Set a New Standard for Customer Support'),
 
     // Buttons
+    // move to general?
     btnRequestDemo: locators.button('Request a Demo'),
     btnReadCaseStudy: locators.button('Read the case study'),
     btnGetGuide: locators.button('Get the Guide'),
@@ -45,21 +46,8 @@ const loc = {
     ...homeLocators
 };
 
-export class HomePage extends BasePage {
-    back() {
-        cy.visit(loc.url);
-        //cy.go('back');
-        cy.url().should('include', loc.url);
-    }
+class HomePage extends BasePage {
 
-    checkSectionLink(section, lnk, url) {
-        cy.get(section).within(() => {
-            cy.get(lnk).should('be.visible');
-            cy.get(lnk).click();
-            cy.url().should('include', url);
-            this.back();
-        });
-    }
 
     verifyReimaginedSection() {
         cy.xpath(loc.reimaginedSection).should('be.visible');

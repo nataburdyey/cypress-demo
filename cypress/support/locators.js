@@ -1,7 +1,8 @@
-export const locators = {
-    // Buttons
+export const locatorHelpers = {
+    // General
     section: (text, n = 1) => `(//section[.//*[contains(text(),'${text}')]])[${n}]`,
     button: (text, n = 1) => `(//a[contains(@class,'btn') and contains(text(),'${text}')])[${n}]`,
+    tab: (text, n = 1) => `(//li[@data-tabcontroller='${text}'])[${n}]`,
 
     /*
     seeMore: n => `(//button[@id='topMatchesScroll'])[${n}]`,
@@ -32,3 +33,9 @@ export const locators = {
     footer: "//div[@class='container-fluid footer_padding secondary-color-900 text-white py-2']",
     */
 };
+
+export const locators = {
+    ...locatorHelpers,
+    btnRequestADemo: locatorHelpers.button('Request a Demo'),
+
+}
