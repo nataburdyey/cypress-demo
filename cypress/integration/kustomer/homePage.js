@@ -36,7 +36,7 @@ describe('Mini Demo for Kustomer', () => {
             cookieFragment.accept();
         });
 
-        it('Verify all sections are displayed on the page', () => {
+        it('verifies all sections are displayed on the page', () => {
             homePage.verifyReimaginedSection();
             homePage.verifyConversationContextSection();
             homePage.verifyAutomationSection();
